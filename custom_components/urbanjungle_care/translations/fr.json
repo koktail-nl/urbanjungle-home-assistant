@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Se connecter à UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Réauthentifier UrbanJungle Care",
+        "description": "Le lien avec votre compte UrbanJungle Care a expiré. Autorisez à nouveau Home Assistant pour continuer."
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter à l'API UrbanJungle Care"
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré",
+      "authorize_url_timeout": "Délai dépassé lors de la création de l'URL d'autorisation",
+      "missing_configuration": "L'intégration UrbanJungle Care n'est pas configurée",
+      "no_url_available": "Aucune URL disponible pour vous renvoyer vers Home Assistant après l'autorisation",
+      "oauth_error": "Réponse invalide reçue de UrbanJungle Care",
+      "oauth_failed": "L'autorisation auprès de UrbanJungle Care a échoué",
+      "oauth_timeout": "Délai dépassé en attendant la fin de l'autorisation",
+      "oauth_unauthorized": "UrbanJungle Care a refusé l'autorisation",
+      "reauth_successful": "La réauthentification a réussi",
+      "user_rejected_authorize": "L'autorisation a été annulée"
+    },
+    "create_entry": {
+      "default": "Connexion à UrbanJungle Care réussie"
+    }
+  }
+}

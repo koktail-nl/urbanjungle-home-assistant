@@ -1,0 +1,20 @@
+{
+  "domain": "urbanjungle_care",
+  "name": "UrbanJungle Care",
+  "codeowners": [
+    "@urbanjungle"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "auth",
+    "http"
+  ],
+  "after_dependencies": [
+    "xiaomi_ble"
+  ],
+  "documentation": "https://github.com/urbanjungle/urbanjungle.care",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "3.0.0"
+}

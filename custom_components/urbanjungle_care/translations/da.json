@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Opret forbindelse til UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Godkend UrbanJungle Care igen",
+        "description": "Forbindelsen til din UrbanJungle Care-konto er udløbet. Godkend Home Assistant igen for at fortsætte."
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan ikke oprette forbindelse til UrbanJungle Care-API'et"
+    },
+    "abort": {
+      "already_configured": "Denne konto er allerede konfigureret",
+      "authorize_url_timeout": "Tidsgrænsen blev overskredet under oprettelsen af godkendelsesadressen",
+      "missing_configuration": "UrbanJungle Care-integrationen er ikke konfigureret",
+      "no_url_available": "Ingen adresse tilgængelig til at sende dig tilbage til Home Assistant efter godkendelsen",
+      "oauth_error": "Modtog et ugyldigt svar fra UrbanJungle Care",
+      "oauth_failed": "Godkendelsen hos UrbanJungle Care mislykkedes",
+      "oauth_timeout": "Tidsgrænsen blev overskredet, mens der blev ventet på godkendelsen",
+      "oauth_unauthorized": "UrbanJungle Care afviste godkendelsen",
+      "reauth_successful": "Fornyet godkendelse lykkedes",
+      "user_rejected_authorize": "Godkendelsen blev annulleret"
+    },
+    "create_entry": {
+      "default": "Forbundet til UrbanJungle Care"
+    }
+  }
+}

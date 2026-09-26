@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Conectar con UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Volver a autenticar UrbanJungle Care",
+        "description": "El vínculo con tu cuenta de UrbanJungle Care ha caducado. Autoriza Home Assistant de nuevo para continuar."
+      }
+    },
+    "error": {
+      "cannot_connect": "No se puede conectar con la API de UrbanJungle Care"
+    },
+    "abort": {
+      "already_configured": "Esta cuenta ya está configurada",
+      "authorize_url_timeout": "Tiempo de espera agotado al generar la URL de autorización",
+      "missing_configuration": "La integración UrbanJungle Care no está configurada",
+      "no_url_available": "No hay ninguna URL disponible para devolverte a Home Assistant después de autorizar",
+      "oauth_error": "Se recibió una respuesta no válida de UrbanJungle Care",
+      "oauth_failed": "Error al autorizar con UrbanJungle Care",
+      "oauth_timeout": "Tiempo de espera agotado mientras se completaba la autorización",
+      "oauth_unauthorized": "UrbanJungle Care rechazó la autorización",
+      "reauth_successful": "La nueva autenticación se ha realizado correctamente",
+      "user_rejected_authorize": "La autorización se ha cancelado"
+    },
+    "create_entry": {
+      "default": "Conectado correctamente con UrbanJungle Care"
+    }
+  }
+}

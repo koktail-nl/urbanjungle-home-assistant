@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Anslut till UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Autentisera UrbanJungle Care igen",
+        "description": "Kopplingen till ditt UrbanJungle Care-konto har upphört att gälla. Godkänn Home Assistant igen för att fortsätta."
+      }
+    },
+    "error": {
+      "cannot_connect": "Det går inte att ansluta till UrbanJungle Care-API:et"
+    },
+    "abort": {
+      "already_configured": "Det här kontot är redan konfigurerat",
+      "authorize_url_timeout": "Tidsgränsen överskreds när auktoriseringsadressen skapades",
+      "missing_configuration": "UrbanJungle Care-integrationen är inte konfigurerad",
+      "no_url_available": "Ingen adress tillgänglig för att skicka dig tillbaka till Home Assistant efter godkännandet",
+      "oauth_error": "Ogiltigt svar från UrbanJungle Care",
+      "oauth_failed": "Auktoriseringen mot UrbanJungle Care misslyckades",
+      "oauth_timeout": "Tidsgränsen överskreds i väntan på att auktoriseringen skulle bli klar",
+      "oauth_unauthorized": "UrbanJungle Care nekade auktoriseringen",
+      "reauth_successful": "Autentiseringen lyckades",
+      "user_rejected_authorize": "Auktoriseringen avbröts"
+    },
+    "create_entry": {
+      "default": "Ansluten till UrbanJungle Care"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "UrbanJungle Care에 연결"
+      },
+      "reauth_confirm": {
+        "title": "UrbanJungle Care 다시 인증",
+        "description": "UrbanJungle Care 계정과의 연결이 만료되었습니다. 계속하려면 Home Assistant를 다시 승인하세요."
+      }
+    },
+    "error": {
+      "cannot_connect": "UrbanJungle Care API에 연결할 수 없습니다"
+    },
+    "abort": {
+      "already_configured": "이 계정은 이미 설정되어 있습니다",
+      "authorize_url_timeout": "인증 URL을 만드는 중 시간이 초과되었습니다",
+      "missing_configuration": "UrbanJungle Care 통합이 구성되지 않았습니다",
+      "no_url_available": "승인 후 Home Assistant로 돌아갈 URL이 없습니다",
+      "oauth_error": "UrbanJungle Care에서 잘못된 응답을 받았습니다",
+      "oauth_failed": "UrbanJungle Care 승인에 실패했습니다",
+      "oauth_timeout": "승인이 완료되기를 기다리는 중 시간이 초과되었습니다",
+      "oauth_unauthorized": "UrbanJungle Care가 승인을 거부했습니다",
+      "reauth_successful": "다시 인증했습니다",
+      "user_rejected_authorize": "승인이 취소되었습니다"
+    },
+    "create_entry": {
+      "default": "UrbanJungle Care에 연결되었습니다"
+    }
+  }
+}

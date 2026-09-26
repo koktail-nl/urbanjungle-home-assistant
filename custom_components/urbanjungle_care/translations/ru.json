@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Подключиться к UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Повторная авторизация UrbanJungle Care",
+        "description": "Связь с вашей учётной записью UrbanJungle Care истекла. Авторизуйте Home Assistant снова, чтобы продолжить."
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к API UrbanJungle Care"
+    },
+    "abort": {
+      "already_configured": "Эта учётная запись уже настроена",
+      "authorize_url_timeout": "Истекло время ожидания при создании ссылки авторизации",
+      "missing_configuration": "Интеграция UrbanJungle Care не настроена",
+      "no_url_available": "Нет адреса для возврата в Home Assistant после авторизации",
+      "oauth_error": "Получен недопустимый ответ от UrbanJungle Care",
+      "oauth_failed": "Не удалось выполнить авторизацию в UrbanJungle Care",
+      "oauth_timeout": "Истекло время ожидания завершения авторизации",
+      "oauth_unauthorized": "UrbanJungle Care отклонил авторизацию",
+      "reauth_successful": "Повторная авторизация выполнена",
+      "user_rejected_authorize": "Авторизация отменена"
+    },
+    "create_entry": {
+      "default": "Подключение к UrbanJungle Care выполнено"
+    }
+  }
+}

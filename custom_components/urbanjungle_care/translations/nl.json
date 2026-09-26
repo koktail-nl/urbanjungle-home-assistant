@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Verbinden met UrbanJungle Care"
+      },
+      "reauth_confirm": {
+        "title": "Opnieuw koppelen met UrbanJungle Care",
+        "description": "De koppeling met je UrbanJungle Care-account is verlopen. Geef Home Assistant opnieuw toegang om verder te gaan."
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met de UrbanJungle Care API"
+    },
+    "abort": {
+      "already_configured": "Dit account is al ingesteld",
+      "authorize_url_timeout": "Time-out bij het aanmaken van de autorisatie-URL",
+      "missing_configuration": "De UrbanJungle Care-integratie is niet geconfigureerd",
+      "no_url_available": "Geen URL beschikbaar om je na het autoriseren terug te sturen naar Home Assistant",
+      "oauth_error": "Ongeldig antwoord ontvangen van UrbanJungle Care",
+      "oauth_failed": "Autoriseren bij UrbanJungle Care is mislukt",
+      "oauth_timeout": "Time-out tijdens het wachten op de autorisatie",
+      "oauth_unauthorized": "UrbanJungle Care heeft de autorisatie geweigerd",
+      "reauth_successful": "Opnieuw koppelen is gelukt",
+      "user_rejected_authorize": "De autorisatie is geannuleerd"
+    },
+    "create_entry": {
+      "default": "Verbonden met UrbanJungle Care"
+    }
+  }
+}
