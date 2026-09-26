@@ -39,9 +39,3 @@ uit je account.
 - Home Assistant 2024.2 of nieuwer
 - Een UrbanJungle Care-account
 - Voor sensormetingen: Bluetooth in Home Assistant met de `xiaomi_ble`-integratie
-
-## Ontwikkelen
-
-`python3 validate.py` controleert of de component compleet is en compileert. Een release
-gaat via een `v*.*.*`-tag, die `.github/workflows/home-assistant-release.yml` oppakt; de
-versie in `manifest.json` moet gelijk zijn aan de tag.
