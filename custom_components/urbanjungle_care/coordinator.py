@@ -128,7 +128,7 @@ class UrbanJungleCareCoordinator(DataUpdateCoordinator):
         dev_reg = dr.async_get(self.hass)
         ent_reg = er.async_get(self.hass)
 
-        for device in list(dev_reg.devices.values()):
+        for device in list(dev_reg.devices):
             address = next(
                 (v for (kind, v) in device.connections if kind == CONNECTION_BLUETOOTH),
                 None,
