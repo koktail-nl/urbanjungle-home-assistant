@@ -2,7 +2,7 @@
   "domain": "urbanjungle_care",
   "name": "UrbanJungle Care",
   "codeowners": [
-    "@urbanjungle"
+    "@koktaildotcom"
   ],
   "config_flow": true,
   "dependencies": [
@@ -12,9 +12,10 @@
   "after_dependencies": [
     "xiaomi_ble"
   ],
-  "documentation": "https://github.com/urbanjungle/urbanjungle.care",
+  "documentation": "https://www.urbanjungle.care/integrations/home-assistant/",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/koktail-nl/urbanjungle-home-assistant/issues",
   "requirements": [],
-  "version": "3.0.1"
+  "version": "3.0.2"
 }

@@ -1,41 +1,63 @@
-# UrbanJungle Care voor Home Assistant
+# UrbanJungle Care for Home Assistant
 
-Brengt je UrbanJungle Care-planten en -sensoren naar Home Assistant, en stuurt metingen
-van Bluetooth-sensoren die Home Assistant al ziet terug naar je UrbanJungle-account.
+Brings the sensors of your UrbanJungle Care account into Home Assistant, and sends the
+readings of Bluetooth plant sensors that Home Assistant already sees back to your
+UrbanJungle account.
 
-## Wat je krijgt
+## Requirements
 
-- Inloggen met je UrbanJungle-account via OAuth2 met PKCE; Home Assistant ziet je
-  wachtwoord nooit en bewaart alleen een token dat je op elk moment kunt intrekken in de app.
-- Sensoren per plant: bodemvocht, licht, temperatuur, voeding en batterij.
-- Metingen van `xiaomi_ble`-sensoren worden doorgestuurd naar je account, zodat de app en
-  Home Assistant dezelfde historie delen. Een nog onbekende sensor registreert zichzelf.
-- Verversfrequentie volgt je abonnement: elke 15 minuten met premium, elke 24 uur zonder.
+- Home Assistant 2025.4 or newer
+- An UrbanJungle Care account
+- The `my` integration, which `default_config` loads. Home Assistant returns from the
+  UrbanJungle sign-in through `my.home-assistant.io`, and that redirect needs it. If your
+  `configuration.yaml` has no `default_config:`, add `my:`.
+- For forwarding sensor readings: Bluetooth in Home Assistant with the `xiaomi_ble`
+  integration
 
-## Installeren
+## Install through HACS
 
-### Via HACS
+1. Open HACS, then the menu at the top right, then "Custom repositories"
+2. Add `https://github.com/koktail-nl/urbanjungle-home-assistant` with type Integration
+3. Search for "UrbanJungle Care" in HACS, download it and restart Home Assistant
+4. Go to Settings, Devices & services, Add integration, and search for UrbanJungle Care
 
-1. HACS, dan Integrations, dan via het menu rechtsboven "Custom repositories"
-2. Voeg `koktail-nl/urbanjungle-home-assistant` toe met categorie Integration
-3. Download "UrbanJungle Care" en herstart Home Assistant
-4. Instellingen, dan Apparaten en diensten, dan Integratie toevoegen, zoek UrbanJungle Care
+## Install by hand
 
-### Met de hand
+1. Download `urbanjungle_care.zip` from the latest release on
+   https://github.com/koktail-nl/urbanjungle-home-assistant/releases
+2. Unpack it into `config/custom_components/`, so the files end up in
+   `config/custom_components/urbanjungle_care/`
+3. Restart Home Assistant and add the integration through Settings, Devices & services
 
-1. Pak `urbanjungle_care.zip` uit de release uit in `config/custom_components/`
-2. Herstart Home Assistant en voeg de integratie toe via de interface
+## Connecting
 
-## Koppelen
+The integration sends you to your UrbanJungle account, where you approve the access. Sign-in
+uses OAuth2 with PKCE: Home Assistant never sees your password and only stores a token in its
+config entry. Home Assistant comes back through `my.home-assistant.io` and finishes the setup.
 
-De integratie stuurt je naar je UrbanJungle-account, waar je de toegang goedkeurt. Home
-Assistant komt terug via `my.home-assistant.io` en bewaart het token in de config entry.
-Trek je de koppeling later in de app in, dan vraagt Home Assistant je vanzelf opnieuw om
-toestemming. Verwijder je de integratie in Home Assistant, dan verdwijnt ook de koppeling
-uit je account.
+## What you get
 
-## Vereisten
+- One Home Assistant device per UrbanJungle sensor device in your account, each with five
+  sensors: Moisture, Light, Temperature, Conductivity (nutrition) and Battery.
+- One "UrbanJungle Sync Status" sensor that shows the refresh frequency, with attributes for
+  premium status, the last sync and the number of synced devices and plants.
+- The integration creates these entities for the devices that exist when it is set up. A
+  device added to your account later appears after you reload the integration or restart
+  Home Assistant.
+- On each refresh cycle the readings of `xiaomi_ble` plant sensors (moisture, light,
+  temperature, conductivity, battery) are sent to your account, so the app and Home
+  Assistant share the same history. A sensor your account does not know yet registers
+  itself.
+- The refresh cycle follows your subscription: every 15 minutes with premium, every 24 hours
+  without.
 
-- Home Assistant 2024.2 of nieuwer
-- Een UrbanJungle Care-account
-- Voor sensormetingen: Bluetooth in Home Assistant met de `xiaomi_ble`-integratie
+## Removing and revoking
+
+- Revoke the link in the UrbanJungle app and Home Assistant asks you to approve the access
+  again on its next refresh.
+- Remove the integration in Home Assistant and the link disappears from your UrbanJungle
+  account as well.
+
+## Issues
+
+Report problems at https://github.com/koktail-nl/urbanjungle-home-assistant/issues
